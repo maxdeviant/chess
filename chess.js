@@ -34,13 +34,56 @@ function createBoard() {
 }
 
 function populateBoard() {
+	var starting = {
+		"8": {
+			"A": "rook",
+			"B": "knight",
+			"C": "bishop",
+			"D": "queen",
+			"E": "king",
+			"F": "bishop",
+			"G": "knight",
+			"H": "rook"
+		},
+		"7": {
+			"A": "pawn",
+			"B": "pawn",
+			"C": "pawn",
+			"D": "pawn",
+			"E": "pawn",
+			"F": "pawn",
+			"G": "pawn",
+			"H": "pawn"
+		},
+		"2": {
+			"A": "pawn",
+			"B": "pawn",
+			"C": "pawn",
+			"D": "pawn",
+			"E": "pawn",
+			"F": "pawn",
+			"G": "pawn",
+			"H": "pawn"
+		},
+		"1": {
+			"A": "rook",
+			"B": "knight",
+			"C": "bishop",
+			"D": "queen",
+			"E": "king",
+			"F": "bishop",
+			"G": "knight",
+			"H": "rook"
+		}
+	};
+
 	// Black side
 	for (var row = 0; row < 2; row++) {
 		for (var col = 0; col < 8; col++) {
 			var rowID = 8 - row;
 			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
 			
-			$('#' + colID + rowID).html('<div class="king black"></div>');
+			$('#' + colID + rowID).html('<div class="' + starting[rowID][colID] + ' black"></div>');
 		}
 	}
 
@@ -50,7 +93,7 @@ function populateBoard() {
 			var rowID = 8 - row;
 			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
 			
-			$('#' + colID + rowID).html("P");
+			$('#' + colID + rowID).html('<div class="' + starting[rowID][colID] + ' white"></div>');
 		}
 	}
 }

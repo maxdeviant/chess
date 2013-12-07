@@ -22,7 +22,7 @@ body {
 }
 
 .dark {
-	background: #000000;
+	background: #cccccc;
 }
 
 /* Pieces */
@@ -59,7 +59,7 @@ body {
 .rook.black {
 	width: 64px;
 	height: 64px;
-	background: url("images/Rook_B.svg");
+	background: url("images/Rook_B.png");
 	background-repeat: no-repeat;
 }
 
@@ -102,7 +102,7 @@ body {
 .rook.white {
 	width: 64px;
 	height: 64px;
-	background: url("images/Rook_W.svg");
+	background: url("images/Rook_W.png");
 	background-repeat: no-repeat;
 }
 
