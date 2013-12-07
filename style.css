@@ -13,6 +13,7 @@ body {
 .tile {
 	height: 64px;
 	width: 64px;
+	color: red;
 }
 
 .light {

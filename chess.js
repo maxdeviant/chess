@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	var pieces = ["King", "Queen", "Bishop", "Knight", "Rook", "Pawn"];
+
 	$('.board').html(createBoard());
 });
 
@@ -7,13 +9,16 @@ function createBoard() {
 
 	var count = 0;
 	for (var row = 0; row < 8; row++) {
+		var rowID = 8 - row;
 		board += '<tr>';
 
 		for (var col = 0; col < 8; col++) {
+			var colID = String.fromCharCode('a'.charCodeAt(0) + col);
+
 			if (count % 2 === 0) {
-				board += '<td class="tile light"></td>';
+				board += '<td id="' + colID + rowID + '" class="tile light">' + colID + rowID + '</td>';
 			} else {
-				board += '<td class="tile dark"></td>';
+				board += '<td id="' + colID + rowID + '" class="tile dark">' + colID + rowID + '</td>';
 			}
 
 			count += 1;
@@ -24,4 +29,8 @@ function createBoard() {
 	}
 
 	return board;
+}
+
+function populateBoard() {
+
 }
