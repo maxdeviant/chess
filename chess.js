@@ -4,6 +4,8 @@ $(document).ready(function() {
 	$('.board').html(createBoard());
 
 	populateBoard();
+
+	$('.piece').draggable();
 });
 
 function createBoard() {
@@ -83,7 +85,7 @@ function populateBoard() {
 			var rowID = 8 - row;
 			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
 			
-			$('#' + colID + rowID).html('<div class="' + starting[rowID][colID] + ' black"></div>');
+			$('#' + colID + rowID).html('<div class="piece ' + starting[rowID][colID] + ' black"></div>');
 		}
 	}
 
@@ -93,7 +95,7 @@ function populateBoard() {
 			var rowID = 8 - row;
 			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
 			
-			$('#' + colID + rowID).html('<div class="' + starting[rowID][colID] + ' white"></div>');
+			$('#' + colID + rowID).html('<div class="piece ' + starting[rowID][colID] + ' white"></div>');
 		}
 	}
 }
