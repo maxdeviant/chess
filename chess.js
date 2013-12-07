@@ -13,7 +13,7 @@ function createBoard() {
 		board += '<tr>';
 
 		for (var col = 0; col < 8; col++) {
-			var colID = String.fromCharCode('a'.charCodeAt(0) + col);
+			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
 
 			if (count % 2 === 0) {
 				board += '<td id="' + colID + rowID + '" class="tile light">' + colID + rowID + '</td>';
