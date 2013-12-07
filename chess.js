@@ -2,6 +2,8 @@ $(document).ready(function() {
 	var pieces = ["King", "Queen", "Bishop", "Knight", "Rook", "Pawn"];
 
 	$('.board').html(createBoard());
+
+	populateBoard();
 });
 
 function createBoard() {
@@ -32,5 +34,23 @@ function createBoard() {
 }
 
 function populateBoard() {
+	// Black side
+	for (var row = 0; row < 2; row++) {
+		for (var col = 0; col < 8; col++) {
+			var rowID = 8 - row;
+			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
+			
+			$('#' + colID + rowID).html("P");
+		}
+	}
 
+	// White side
+	for (var row = 6; row < 8; row++) {
+		for (var col = 0; col < 8; col++) {
+			var rowID = 8 - row;
+			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
+			
+			$('#' + colID + rowID).html("P");
+		}
+	}
 }
