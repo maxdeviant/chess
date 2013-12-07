@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 	populateBoard();
 
-	$('.piece').draggable();
+	$('.piece').draggable({ snap: ".tile" });
 });
 
 function createBoard() {
