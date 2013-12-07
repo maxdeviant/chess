@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	$('.board').html(createBoard());
+});
+
+function createBoard() {
 	var board = '';
 
 	var count = 0;
@@ -18,6 +22,6 @@ $(document).ready(function() {
 		board += "</tr>";
 		count += 1;
 	}
-	
-	$('.board').html(board);
-});
+
+	return board;
+}
