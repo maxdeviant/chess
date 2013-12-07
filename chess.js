@@ -40,7 +40,7 @@ function populateBoard() {
 			var rowID = 8 - row;
 			var colID = String.fromCharCode('A'.charCodeAt(0) + col);
 			
-			$('#' + colID + rowID).html("P");
+			$('#' + colID + rowID).html('<div class="king black"></div>');
 		}
 	}
 

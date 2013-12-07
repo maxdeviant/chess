@@ -24,3 +24,91 @@ body {
 .dark {
 	background: #000000;
 }
+
+/* Pieces */
+
+/* Black */
+.king.black {
+	width: 64px;
+	height: 64px;
+	background: url("images/King_B.png");
+	background-repeat: no-repeat;
+}
+
+.queen.black {
+	width: 64px;
+	height: 64px;
+	background: url("images/Queen_B.png");
+	background-repeat: no-repeat;
+}
+
+.bishop.black {
+	width: 64px;
+	height: 64px;
+	background: url("images/Bishop_B.png");
+	background-repeat: no-repeat;
+}
+
+.knight.black {
+	width: 64px;
+	height: 64px;
+	background: url("images/Knight_B.png");
+	background-repeat: no-repeat;
+}
+
+.rook.black {
+	width: 64px;
+	height: 64px;
+	background: url("images/Rook_B.svg");
+	background-repeat: no-repeat;
+}
+
+.pawn.black {
+	width: 64px;
+	height: 64px;
+	background: url("images/Pawn_B.png");
+	background-repeat: no-repeat;
+}
+
+/* White */
+.king.white {
+	width: 64px;
+	height: 64px;
+	background: url("images/King_W.png");
+	background-repeat: no-repeat;
+}
+
+.queen.white {
+	width: 64px;
+	height: 64px;
+	background: url("images/Queen_W.png");
+	background-repeat: no-repeat;
+}
+
+.bishop.white {
+	width: 64px;
+	height: 64px;
+	background: url("images/Bishop_W.png");
+	background-repeat: no-repeat;
+}
+
+.knight.white {
+	width: 64px;
+	height: 64px;
+	background: url("images/Knight_W.png");
+	background-repeat: no-repeat;
+}
+
+.rook.white {
+	width: 64px;
+	height: 64px;
+	background: url("images/Rook_W.svg");
+	background-repeat: no-repeat;
+}
+
+.pawn.white {
+	width: 64px;
+	height: 64px;
+	background: url("images/Pawn_W.png");
+	background-repeat: no-repeat;
+}
